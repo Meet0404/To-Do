@@ -1,0 +1,72 @@
+body{
+    background-image: linear-gradient(90deg, #fddb92 0%, #d1fdff 100%);
+    font-family:'Comic Sans MS',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.headings{
+    text-align: center;
+    font-family: 'Comic Sans MS',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-display:initial ;
+    font-size: 44px;
+    padding: 40px;
+}
+
+.entry,.DeleteEntry{
+    text-align: center;
+    font-family:'Comic Sans MS',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size:larger;
+}
+
+hr{
+    border-color: black;
+    border-radius: 10px;
+    background-color: black;
+    padding: 0.5px;
+}
+
+#User-input-add{    
+    width: 15cm;
+    border-radius: 13px;
+    border-color: black;
+    font-family:'Comic Sans MS',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    background-image: linear-gradient(90deg, #fff1d1 0%, #e3fdff 100%);
+    border-image: fill;
+}
+
+#User-input-delete{    
+    width: 14.25cm;
+    border-radius: 13px;
+    border-color: black;
+    font-family:'Comic Sans MS',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    background-image: linear-gradient(90deg, #fff1d1 0%, #e3fdff 100%);
+    border-image: fill;
+}
+
+#add{
+    border-radius: 13px;
+    border-color: black;
+    background-color: #dff5f6;
+    font-weight: bold;
+    color: green;
+    font-size: 13px;
+}
+
+#remove{
+    color: red;
+    border-radius: 13px;
+    border-color: black;
+    background-color: #dff5f6;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.Entries{
+    padding: 10px;
+    padding-left: 10cm;
+    text-align: justify;
+    font-size: larger;
+}
