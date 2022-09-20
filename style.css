@@ -1,6 +1,8 @@
 body{
     background-image: linear-gradient(90deg, #fddb92 0%, #d1fdff 100%);
     font-family:'Comic Sans MS',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    width: 80%vw;
 }
 
 .headings{
@@ -9,9 +11,15 @@ body{
     font-display:initial ;
     font-size: 44px;
     padding: 40px;
+    margin: auto;
+}
+
+.inner-body{
+    display: block;
 }
 
 .entry,.DeleteEntry{
+    display: block;
     text-align: center;
     font-family:'Comic Sans MS',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     font-size:larger;
@@ -64,9 +72,37 @@ hr{
     font-size: 13px;
 }
 
+.close{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 12px 16px;
+    transform: translate(0%, -50%);
+    color: red;
+    font-weight: bold;
+    font-size: large;
+}
+
 .Entries{
+    border: 5px;
+    border-color: black;
     padding: 10px;
-    padding-left: 10cm;
+    padding-left: 7cm;
+    padding-right: 7cm;
     text-align: justify;
     font-size: larger;
+    width: 80%vw;
 }
+ li {
+    border: 1px solid black;
+    border-radius: 31px;
+    margin-top: 4px; /* Prevent double borders */
+    background-image: linear-gradient(90deg, #fff1d1 0%, #e3fdff 100%);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    position: relative;
+  }
