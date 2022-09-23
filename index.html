@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--makes the webpage responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do-list</title>
     <link
       rel="icon"
@@ -18,27 +19,31 @@
         <header>To Do List</header>
         <hr />
       </div>
-      <div class="entry">
-        <p>
-          Enter a task you want to add to the List &nbsp;
-          <input type="text" id="User-input-add" />
-          <input type="button" value="Add" id="add" onclick="AddEntry()" />
-        </p>
-      </div>
-      <div class="DeleteEntry">
-        <p>
-          Enter a task you want to remove from the List &nbsp;
-          <input type="text" id="User-input-delete" />
-          <input
-            type="button"
-            value="Remove"
-            id="remove"
-            onclick="RemoveEntry()"
-          />
-        </p>
-      </div>
-      <div class="Entries">
-        <ol id="addtolist" onclick="remove()"></ol>
+      <div class="inner-body">
+        <div class="entry">
+          <p>
+            Enter a task you want to add to the List &nbsp;
+            <input type="text" id="User-input-add" />
+            <input type="button" value="Add" id="add" onclick="AddEntry()" />
+          </p>
+        </div>
+        <div class="DeleteEntry">
+          <p>
+            Enter a task you want to remove from the List &nbsp;
+            <input type="text" id="User-input-delete" />
+            <input
+              type="button"
+              value="Remove"
+              id="remove"
+              onclick="RemoveEntry()"
+            />
+          </p>
+        </div>
+        <div class="Entries">
+          <p>
+          <ol id="addtolist" class="addtolist"></ol>
+          </p>
+        </div>
       </div>
     </div>
     <script src="./index.js"></script>
