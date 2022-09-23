@@ -24,31 +24,40 @@ function AddEntry(){
     //creates the new element in the DOM
     const div=document.createElement('div');
     //creates the new element in the DOM
-    const span=document.createElement('span');
+    const span=document.createElement('div');
     //gives the new created div the id of "Dynamic DOM" so that we can edit the CSS of it.
     div.setAttribute('id','DynamicDOM');
     //sets the attribute for the button on the end of each newly created element upon entry
     span.setAttribute('class','close');
-    span.innerHTML='&times;</span>';
+    span.innerHTML='&times;';
     //gives DIV the value obtained from the user as an input
     div.append(ToAdd.value,span);
-    li.setAttribute('id',ToAdd.value); 
+    li.setAttribute('id',ToAdd.value);
+    li.setAttribute('class','dynamicList') 
+    li.setAttribute('ondblclick','myFunction()')
     li.appendChild(div);
     ol.appendChild(li);
     document.getElementById("User-input-add").value='';
+    
 }
 
+function myFunction(){
+    document.getElementById("DynamicDOM").style.textDecoration = 'strikethrough' ; 
+}
 
-
-let inputfield1=document.getElementById('User-input-delete');
-inputfield1.addEventListener("keypress",function submit(event1){
-    if(event1.key === 'Enter'|| event1.key === 'return'){
-        event1.preventDefault();
-        document.getElementById("remove").click();
-    }
-});
+function RemoveonClick(){
+    let parent= document.getElementById('addtolist');
+    let child = document.getElementById('DynamicDom');
+}
 
 //this removes the item from the list when the user clicks on the 'x' button 
+//  document.getElementsByClassName('.close').addEventListener('click',function(){
+//     console.log(this);
+//  });
+ //console.log(btn);
+function Remove(){
+
+}
 
 
 
